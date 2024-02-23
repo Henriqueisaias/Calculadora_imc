@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de imc</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="src/scripts.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-table">
+        <form id="ent-form">
+          <h2>Calculadora de IMC</h2>
+          <label for="height">Altura</label>
+          <input id="height" type="number" placeholder="Altura em metros" />
+          <label for="height">Peso</label>
+          <input id="wheight" type="number" placeholder="Altura em metros" />
+          <div class="btn-div">
+            <button id="calc">Calcular</button>
+            <button id="reset">Limpar</button>
+          </div>
+        </form>
+      </div>
+      <div class="imc-table hide">
+        <div class="table-header">
+          <h1>Seu Imc: <span id="imc"></span></h1>
+          <p>Situação atual: <span id="sit"></span></p>
+          <h2>Confira as classificações</h2>
+        </div>
+          <div class="info-div">
+            <div class="info-class">
+                <p>imc</p>
+                <p>classificações</p>
+                <p>Obesidade</p>
+            </div>
+            <div class="info-container">
+                <p>Menor que 18,5</p>
+                <p>Magreza</p>
+                <p>0</p>
+            </div id="info-in">
+            <div class="info-container">
+                <p>Entre 18,5 e 24,9</p>
+                <p>Normal</p>
+                <p>0</p>
+            </div>
+            <div class="info-container">
+                <p>Entre 25,0 e 29,9</p>
+                <p>Sobrepeso</p>
+                <p>I</p>
+            </div>
+            <div class="info-container">
+                <p>Entre 30,0 e 39,9</p>
+                <p>Obesidade</p>
+                <p>II</p>
+            </div>
+
+            <div class="info-container">
+                <p>Maior que 40,0</p>
+                <p>Obesidade grave</p>
+                <p>III</p>
+            </div>
+          </div>
+          <div class="btn-info">
+            <button id="btn-back">Voltar</button>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
